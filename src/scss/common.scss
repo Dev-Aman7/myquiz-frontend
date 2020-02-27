@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+@each $key, $value in $sizes {
+  .m#{$key} {
+    margin: $value;
+  }
+
+  .mt#{$key} {
+    margin-top: $value;
+  }
+
+  .mr#{$key} {
+    margin-right: $value;
+  }
+
+  .ml#{$key} {
+    margin-left: $value;
+  }
+
+  .mb#{$key} {
+    margin-bottom: $value;
+  }
+
+  .p#{$key} {
+    padding: $value;
+  }
+
+  .pt#{$key} {
+    padding-top: $value;
+  }
+
+  .pr#{$key} {
+    padding-right: $value;
+  }
+
+  .pl#{$key} {
+    padding-left: $value;
+  }
+
+  .pb#{$key} {
+    padding-bottom: $value;
+  }
+}
+
+@each $key, $value in $height {
+  .h#{$key} {
+    height: $value;
+  }
+}
+
+@each $key, $value in $card {
+  .card-#{$key} {
+    height: $value;
+  }
+}

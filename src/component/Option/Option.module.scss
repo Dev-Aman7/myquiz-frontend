@@ -1,0 +1,21 @@
+@import "../../scss/variables.scss";
+
+.container {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid map-get($grey, "normal");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.select {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+  width: inherit;
+  height: 100%;
+  cursor: pointer;
+}

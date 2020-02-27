@@ -1,0 +1,29 @@
+@import "../../scss/variables.scss";
+
+.container {
+  width: 100%;
+  border: 2px solid map-get($grey, "normal");
+  display: flex;
+  border-radius: 0.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container:hover,
+.container:focus,
+.container:focus-within {
+  border-color: $black;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  height: 95%;
+  border: none;
+  padding: 0 0.5rem;
+  width: inherit;
+}
+
+.icon {
+  padding: 0.1rem;
+  cursor: pointer;
+}
