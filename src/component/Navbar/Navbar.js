@@ -1,34 +1,34 @@
 import React, { useState } from "react";
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  Input
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	// NavItem,
+	NavLink,
+	UncontrolledDropdown,
+	DropdownToggle,
+	DropdownMenu,
+	DropdownItem,
+	// NavbarText,
+	InputGroup,
+	InputGroupAddon,
+	InputGroupText,
+	Input
 } from "reactstrap";
 import classes from "./Navbar.module.scss";
 const Example = props => {
-  const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
+	const toggle = () => setIsOpen(!isOpen);
 
-  return (
-    <div>
-      <Navbar color="light" light expand="md" className={classes.main}>
-        <NavbarBrand href="/">QuizAtoZ</NavbarBrand>
+	return (
+		<div>
+			<Navbar color="light" light expand="md" className={classes.main}>
+				<NavbarBrand href="/">QuizAtoZ</NavbarBrand>
 
-        {/* <NavItem>
+				{/* <NavItem>
               <NavLink href="/components/">Components</NavLink>
             </NavItem>
             <NavItem>
@@ -47,35 +47,35 @@ const Example = props => {
                 <DropdownItem>Reset</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown> */}
-        <InputGroup className={classes.searchbar}>
-          <Input placeholder="username" />
-          <InputGroupAddon addonType="append">
-            <InputGroupText>
-              <i class="fas fa-search"></i>
-            </InputGroupText>
-          </InputGroupAddon>
-        </InputGroup>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar></Nav>
-          <NavLink>
-            <i class="fas fa-bell"></i>
-          </NavLink>
-          <UncontrolledDropdown inNavbar>
-            <DropdownToggle nav>
-              <i class="fas fa-user-circle"></i>
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem>Profile</DropdownItem>
-              <DropdownItem>What's New</DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem>Logout</DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
-        </Collapse>
-      </Navbar>
-    </div>
-  );
+				<InputGroup className={classes.searchbar}>
+					<Input placeholder="Search" />
+					<InputGroupAddon addonType="append">
+						<InputGroupText>
+							<i className="fas fa-search"></i>
+						</InputGroupText>
+					</InputGroupAddon>
+				</InputGroup>
+				<NavbarToggler onClick={toggle} />
+				<Collapse isOpen={isOpen} navbar>
+					<Nav className="mr-auto" navbar></Nav>
+					<NavLink>
+						<i className="fas fa-bell"></i>
+					</NavLink>
+					<UncontrolledDropdown inNavbar>
+						<DropdownToggle nav>
+							<i className="fas fa-user-circle"></i>
+						</DropdownToggle>
+						<DropdownMenu right>
+							<DropdownItem>Profile</DropdownItem>
+							<DropdownItem>What's New</DropdownItem>
+							<DropdownItem divider />
+							<DropdownItem>Logout</DropdownItem>
+						</DropdownMenu>
+					</UncontrolledDropdown>
+				</Collapse>
+			</Navbar>
+		</div>
+	);
 };
 
 export default Example;

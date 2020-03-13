@@ -1,8 +1,8 @@
 export {
-  addQuestion,
-  deleteQuestion,
-  inputChange,
-  quizInputChange
+	addQuestion,
+	deleteQuestion,
+	inputChange,
+	quizInputChange
 } from "./createQuiz";
 
 export { getQuizes } from "./reviewQuiz";
